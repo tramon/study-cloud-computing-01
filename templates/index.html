@@ -36,6 +36,7 @@
         <th>id</th>
         <th>task</th>
         <th>status</th>
+        <th>change status</th>
     </tr>
     <tbody>
     {% for tasks in objects %}
@@ -43,7 +44,7 @@
         <td>{{tasks.id}}</td>
         <td>{{tasks.task}}</td>
         <td>{{tasks.status}}</td>
-        <button type="submit">v</button>
+        <td><button type="submit">v</button></td>
     </tr>
     {% endfor %}
     </tbody>
