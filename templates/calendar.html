@@ -5,7 +5,7 @@
 </head>
 <body>
 <h1>Returns a today's date from the back-end</h1>
-<h2>Today's Date: {{date_time}}</h2>
+<h2>Today's Date: {{ date_time.strftime('%m/%d/%Y, %H:%M:%S') }}</h2>
 <br><br>
 <a href="{{ url_for('home') }}">Todo list</a>
 <br>
